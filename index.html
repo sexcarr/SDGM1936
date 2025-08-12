@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的视频在线播放</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .video-wrapper {
+            background: #000;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        video {
+            width: 100%;
+            display: block;
+        }
+        .download-btn {
+            display: block;
+            width: 200px;
+            margin: 15px auto;
+            padding: 10px;
+            background: #0366d6;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>🎬 我的视频在线播放</h1>
+    
+    <div class="video-wrapper">
+        <video controls poster="thumbnail.jpg">
+            <!-- 替换 YOUR_VIDEO.mp4 为你的实际视频文件名 -->
+            <source src="Video_1755009036792.mp4" type="video/mp4">
+            您的浏览器不支持视频播放，请<a href="myvideo.mp4" download>点击下载</a>。
+        </video>
+    </div>
+
+    <a href="myvideo.mp4" download class="download-btn">⬇️ 下载视频</a>
+    
+    <p style="text-align: center; color: #666;">视频托管于 GitHub Pages</p>
+</body>
+</html>
