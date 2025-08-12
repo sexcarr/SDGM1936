@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub 视频在线播放</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+        }
+        .video-container {
+            margin: 20px 0;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        video {
+            width: 100%;
+            display: block;
+        }
+        .download-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background: #0366d6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>我的 GitHub 视频播放页</h1>
+    
+    <div class="video-container">
+        <!-- 替换 YOUR_USERNAME 和 YOUR_REPO 为你的 GitHub 用户名和仓库名 -->
+        <video controls poster="thumbnail.jpg"> <!-- (可选) 添加封面图 -->
+            <source 
+                src="video.mp4" 
+                type="video/mp4"
+            >
+            您的浏览器不支持 HTML5 视频，请<a href="video.mp4" download>下载视频</a>。
+        </video>
+    </div>
+
+    <a href="video.mp4" download class="download-link">下载视频</a>
+
+    <p>视频托管在 GitHub Pages，使用标准 HTML5 播放器。</p>
+</body>
+</html>
